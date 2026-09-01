@@ -3,433 +3,582 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
+    <title>Rodrigo Nuñez — Desarrollador de Software</title>
+    <meta
+      name="description"
+      content="Portfolio de Rodrigo Joel Nuñez, desarrollador de software en Resistencia, Chaco. Proyectos full-stack con JavaScript, Java, Firebase y más."
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   </head>
-  <body class="scroll">
-    <header class="encabezado">
-      <nav class="navegacion">
-        <a class="navegacion__enlace" href="#presentacion">
-          <h2 class="navegacion__titulo">Practica del Portfolio</h2>
+  <body>
+    <a class="salto_contenido" href="#principal">Saltar al contenido</a>
+
+    <header class="encabezado" id="encabezado">
+      <nav class="navegacion contenedor">
+        <a class="navegacion__marca" href="#inicio">
+          Rodrigo<span class="navegacion__marca_punto">.</span>dev
         </a>
-        <ul class="enlaces">
-          <li class="enlaces__item">
-            <a class="enlaces__enlace" href="#presentacion">Inicio</a>
-          </li>
-          <li class="enlaces__item">
-            <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
-          </li>
-          <li class="enlaces__item">
-            <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+        <input type="checkbox" id="menu_toggle" class="menu_toggle" />
+        <label for="menu_toggle" class="menu_boton" aria-label="Abrir menú">
+          <span></span><span></span><span></span>
+        </label>
+        <ul class="navegacion__enlaces">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a
+              href="./assets/docs/CV-Rodrigo-Nunez.pdf"
+              target="_blank"
+              class="boton boton_pequeno"
+              >Descargar CV</a
+            >
           </li>
         </ul>
       </nav>
     </header>
-    <main class="principal">
-      <section class="presentacion" id="presentacion">
-        <div class="presentacion__contenedor_info">
-          <h1 class="presentacion__titulo">Rodrigo Joel Nuñez</h1>
-          <p class="presentacion__parrafo">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+
+    <main id="principal">
+      <section class="hero" id="inicio">
+        <div class="hero__fondo" aria-hidden="true"></div>
+        <div class="contenedor hero__contenido">
+          <p class="hero__eyebrow">Hola, soy</p>
+          <h1 class="hero__titulo">Rodrigo Nuñez</h1>
+          <p class="hero__rol">Desarrollador de Software</p>
+          <p class="hero__pitch">
+            Construyo aplicaciones web de punta a punta: desde tiendas online
+            con pagos integrados hasta paneles de administración. Soy Técnico
+            Universitario en Programación (UTN) y estoy en constante
+            aprendizaje — HTML, CSS y JavaScript son mi base más sólida, y
+            ahora sumo Java, Spring Boot y Python.
           </p>
-          <div class="presentacion__contenedor_botones">
-            <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
-            <a
-              href="./assets/docs/cv.pdf"
-              target="_blank"
-              class="boton boton_oscuro"
-              role="button"
-              >Descargar CV</a
-            >
+          <div class="hero__acciones">
+            <a href="#proyectos" class="boton boton_primario">Ver proyectos</a>
+            <a href="#contacto" class="boton boton_fantasma">Contactarme</a>
+          </div>
+          <ul class="hero__redes" aria-label="Redes sociales">
+            <li>
+              <a
+                href="https://github.com/RodrigoJoel"
+                target="_blank"
+                rel="noopener"
+                aria-label="GitHub"
+                ><img src="./assets/images/logos/github-logo.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/rodriigoo____/"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+                ><img src="./assets/images/logos/ig-logo.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://twitter.com/1394Alves"
+                target="_blank"
+                rel="noopener"
+                aria-label="X (Twitter)"
+                ><img src="./assets/images/logos/x-logo.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="seccion sobre_mi" id="sobre-mi">
+        <div class="contenedor sobre_mi__grid">
+          <div class="sobre_mi__retrato_col">
+            <div class="sobre_mi__retrato_marco">
+              <img
+                src="./assets/images/profile/rodrigo.jpg"
+                alt="Foto de perfil de Rodrigo Nuñez"
+                class="sobre_mi__retrato"
+              />
+            </div>
+            <ul class="sobre_mi__datos">
+              <li><span>📍</span> Resistencia, Chaco, Argentina</li>
+              <li><span>🎓</span> Técnico Universitario en Programación · UTN</li>
+              <li><span>💼</span> Atención al público y gestión de equipos en Lobo24</li>
+              <li><span>📜</span> Certificaciones Oracle Next Education + Alura Latam</li>
+            </ul>
+          </div>
+          <div class="sobre_mi__texto_col">
+            <p class="seccion__eyebrow">Sobre mí</p>
+            <h2 class="seccion__titulo">De la atención al cliente al código</h2>
+            <p class="sobre_mi__parrafo">
+              Soy una persona proactiva y adaptable, con ganas constantes de
+              aprender cosas nuevas. Antes de meterme de lleno en programación
+              pasé varios años liderando equipos y en atención al público —
+              hoy aplico esa misma mirada centrada en las personas al
+              desarrollo de software: pensar primero en quién va a usar lo que
+              construyo.
+            </p>
+            <p class="sobre_mi__parrafo">
+              Soy Técnico Universitario en Programación, egresado de la UTN
+              Facultad Regional Resistencia, y complementé ese camino con
+              formaciones intensivas de Oracle Next Education y Alura Latam
+              en Java &amp; Spring Boot, bases de datos con SQL, y Python
+              para análisis de datos. Antes había cursado varios años de
+              Economía en la UNNE, algo que hoy me ayuda a entender mejor el
+              lado de negocio de los proyectos en los que trabajo.
+            </p>
+            <p class="sobre_mi__parrafo">
+              HTML, CSS y JavaScript son mi base más sólida — con eso
+              construí la mayoría de los e-commerce y proyectos que ves más
+              abajo — pero estoy en constante aprendizaje: siempre sumando
+              herramientas nuevas y buscando el próximo desafío técnico.
+            </p>
           </div>
         </div>
       </section>
-      <article class="articulo sobre_mi" id="sobre-mi">
-        <h2 class="articulo__titulo">Un poco sobre mi</h2>
-        <div class="articulo__contenedor_descripciones">
-          <section class="seccion_descripcion">
-            <div class="seccion_descripcion__porta_retrato">
-              <img
-                class="seccion_descripcion__imagen"
-                src="./assets/images/profile/trabajo2.jpg"
-                alt="foto trabajando en la oficina"
-                title="trabajando en la oficina"
-              />
+
+      <section class="seccion stack" id="stack">
+        <div class="contenedor">
+          <p class="seccion__eyebrow seccion__eyebrow_centro">Stack</p>
+          <h2 class="seccion__titulo seccion__titulo_centro">
+            Con qué trabajo
+          </h2>
+          <div class="stack__grid">
+            <div class="stack__grupo">
+              <h3>Frontend</h3>
+              <ul class="stack__lista">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+              </ul>
             </div>
-            <div
-              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
-              aria-label="descripcion personal"
-            >
-              <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
-                Mi historia
-              </h3>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mi historia"
-                aria-describedby="mi_historia_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
-              </p>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mi historia"
-                aria-describedby="mi_historia_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
-              </p>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mi historia"
-                aria-describedby="mi_historia_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
-              </p>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mi historia"
-                aria-describedby="mi_historia_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
-                quasi atque deserunt odio, minima saepe delectus nemo
-                praesentium sapiente labore excepturi quos repellat non,
-                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
-                deserunt odio, minima saepe delectus nemo praesentium sapiente
-                labore excepturi quos repellat non, officiis, ea vero commodi
-                reiciendis. Lorem ipsum dolor sit, amet consectetur adipisicing
-                elit. Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
-              </p>
+            <div class="stack__grupo">
+              <h3>Backend &amp; lenguajes</h3>
+              <ul class="stack__lista">
+                <li>Java</li>
+                <li>Spring Boot</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>Python</li>
+              </ul>
             </div>
-          </section>
-          <section class="seccion_descripcion">
-            <div
-              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
-              aria-label="descripcion personal"
-            >
-              <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
-                Mis hobbies
-              </h3>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mis hobbies"
-                aria-describedby="mis_hobbies_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
-              </p>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mis hobbies"
-                aria-describedby="mis_hobbies_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis. Lorem ipsum
-                dolor sit, amet consectetur adipisicing elit. Molestiae dolorem
-                quasi atque deserunt odio, minima saepe delectus nemo
-                praesentium sapiente labore excepturi quos repellat non,
-                officiis, ea vero commodi reiciendis. Lorem ipsum dolor sit,
-                amet consectetur adipisicing elit. Molestiae dolorem quasi atque
-                deserunt odio, minima saepe delectus nemo praesentium sapiente
-                labore excepturi quos repellat non, officiis, ea vero commodi
-                reiciendis.
-              </p>
-              <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mis hobbies"
-                aria-describedby="mis_hobbies_titulo"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Molestiae dolorem quasi atque deserunt odio, minima saepe
-                delectus nemo praesentium sapiente labore excepturi quos
-                repellat non, officiis, ea vero commodi reiciendis.
-              </p>
+            <div class="stack__grupo">
+              <h3>Datos</h3>
+              <ul class="stack__lista">
+                <li>MySQL</li>
+                <li>Firebase / Firestore</li>
+              </ul>
             </div>
-            <div class="seccion_descripcion__porta_retrato">
-              <img
-                class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
-                src="./assets/images/profile/trabajo3.jpg"
-                alt="foto mientras me encontraba en una reunion de trabajo"
-                title="selfie en una reunion"
-              />
+            <div class="stack__grupo">
+              <h3>Herramientas</h3>
+              <ul class="stack__lista">
+                <li>Git &amp; GitHub</li>
+                <li>MercadoPago API</li>
+                <li>Trello</li>
+              </ul>
             </div>
-          </section>
+          </div>
         </div>
-      </article>
-      <article class="articulo proyectos" id="proyectos">
-        <h2 class="articulo__titulo">Mis proyectos</h2>
-        <div class="contenedor_tarjetas_grid">
-          <article
-            class="tarjeta"
-            aria-label="presentacion de proyecto personal"
-          >
-            <img
-              class="tarjeta__imagen"
-              src="./assets/images/proyectos/paisaje.jpg"
-              alt="imagen del proyecto"
-              title="proyecto 1"
-            />
-            <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">titulo</h3>
-              <span class="tarjeta__divisor"></span>
-              <p
-                class="tarjeta__parrafo scroll scroll_fino"
-                aria-label="descripcion de proyecto personal"
-                aria-describedby="titulo_proyecto_1"
+      </section>
+
+      <section class="seccion proyectos" id="proyectos">
+        <div class="contenedor">
+          <p class="seccion__eyebrow seccion__eyebrow_centro">Proyectos</p>
+          <h2 class="seccion__titulo seccion__titulo_centro">
+            Cosas que construí
+          </h2>
+
+          <div class="proyectos__destacados">
+            <article class="proyecto_destacado">
+              <a
+                class="proyecto_destacado__imagen_link"
+                href="https://rodrigojoel.github.io/Lobo24/"
+                target="_blank"
+                rel="noopener"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Inventore necessitatibus doloribus adipisci dolorum cum et
-                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-                nihil voluptates eos enim aperiam porro architecto et?
-              </p>
-              <a href="#" class="boton boton_oscuro" target="_blank"
-                >Ver proyecto</a
+                <img
+                  src="./assets/images/proyectos/lobo24.png"
+                  alt="Captura del sitio Lobo24, minimarket online"
+                  loading="lazy"
+                />
+              </a>
+              <div class="proyecto_destacado__contenido">
+                <p class="proyecto_destacado__etiqueta">Proyecto destacado</p>
+                <h3>Lobo24 — Minimarket online 24/7</h3>
+                <p>
+                  E-commerce completo para un minisúper abierto las 24 horas:
+                  más de 3.000 productos organizados por categoría, carrito de
+                  compras, checkout con pago en efectivo o transferencia y un
+                  panel de administración con pedidos en vivo. El backend
+                  (Node.js + Express + Firebase Admin) maneja los pagos con
+                  MercadoPago y el envío de emails.
+                </p>
+                <ul class="tags">
+                  <li>JavaScript</li>
+                  <li>Firebase</li>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MercadoPago</li>
+                </ul>
+                <div class="proyecto_destacado__enlaces">
+                  <a
+                    href="https://rodrigojoel.github.io/Lobo24/"
+                    target="_blank"
+                    rel="noopener"
+                    class="boton boton_pequeno"
+                    >Ver demo</a
+                  >
+                  <a
+                    href="https://github.com/RodrigoJoel/Lobo24"
+                    target="_blank"
+                    rel="noopener"
+                    class="boton boton_pequeno boton_fantasma"
+                    >Código</a
+                  >
+                  <a
+                    href="https://github.com/RodrigoJoel/lobo24-backend"
+                    target="_blank"
+                    rel="noopener"
+                    class="enlace_discreto"
+                    >Backend →</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="proyecto_destacado proyecto_destacado_invertido">
+              <a
+                class="proyecto_destacado__imagen_link"
+                href="https://rodrigojoel.github.io/bliss/"
+                target="_blank"
+                rel="noopener"
               >
-            </div>
-          </article>
-          <article
-            class="tarjeta"
-            aria-label="presentacion de proyecto personal"
-          >
-            <img
-              class="tarjeta__imagen"
-              src="./assets/images/proyectos/juegos.jpg"
-              alt="imagen del proyecto"
-              title="proyecto 2"
-            />
-            <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">titulo</h3>
-              <span class="tarjeta__divisor"></span>
-              <p
-                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
-                aria-label="descripcion de proyecto personal"
-                aria-describedby="titulo_proyecto_2"
+                <img
+                  src="./assets/images/proyectos/bliss.png"
+                  alt="Captura del sitio Bliss, tienda de aromas y bijouterie"
+                  loading="lazy"
+                />
+              </a>
+              <div class="proyecto_destacado__contenido">
+                <p class="proyecto_destacado__etiqueta">Proyecto destacado</p>
+                <h3>bliss — Aromas &amp; Bijouterie</h3>
+                <p>
+                  Tienda online de productos aromáticos y bijouterie con
+                  catálogo completo, carrito, registro/login de usuarios y
+                  checkout con páginas de pago exitoso y fallido, más un panel
+                  de administración propio.
+                </p>
+                <ul class="tags">
+                  <li>JavaScript</li>
+                  <li>Firebase</li>
+                  <li>HTML/CSS</li>
+                </ul>
+                <div class="proyecto_destacado__enlaces">
+                  <a
+                    href="https://rodrigojoel.github.io/bliss/"
+                    target="_blank"
+                    rel="noopener"
+                    class="boton boton_pequeno"
+                    >Ver demo</a
+                  >
+                  <a
+                    href="https://github.com/RodrigoJoel/bliss"
+                    target="_blank"
+                    rel="noopener"
+                    class="boton boton_pequeno boton_fantasma"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="proyecto_destacado">
+              <a
+                class="proyecto_destacado__imagen_link"
+                href="https://rodrigojoel.github.io/TiendaBebidas/"
+                target="_blank"
+                rel="noopener"
               >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Inventore necessitatibus doloribus adipisci dolorum cum et
-                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-                nihil voluptates eos enim aperiam porro architecto et?
-              </p>
-              <a href="#" class="boton" target="_blank">Ver proyecto</a>
-            </div>
-          </article>
-          <article
-            class="tarjeta"
-            aria-label="presentacion de proyecto personal"
-          >
-            <img
-              class="tarjeta__imagen"
-              src="./assets/images/proyectos/calendario.jpg"
-              alt="imagen del proyecto"
-              title="proyecto 3"
-            />
-            <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">titulo</h3>
-              <span class="tarjeta__divisor"></span>
-              <p
-                class="tarjeta__parrafo scroll scroll_fino"
-                aria-label="descripcion de proyecto personal"
-                aria-describedby="titulo_proyecto_3"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Inventore necessitatibus doloribus adipisci dolorum cum et
-                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-                nihil voluptates eos enim aperiam porro architecto et?
-              </p>
-              <a href="#" class="boton boton_oscuro" target="_blank"
-                >Ver proyecto</a
-              >
-            </div>
-          </article>
-          <article
-            class="tarjeta"
-            aria-label="presentacion de proyecto personal"
-          >
-            <img
-              class="tarjeta__imagen"
-              src="./assets/images/proyectos/clima.jpg"
-              alt="imagen del proyecto"
-              title="proyecto 4"
-            />
-            <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">titulo</h3>
-              <span class="tarjeta__divisor"></span>
-              <p
-                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
-                aria-label="descripcion de proyecto personal"
-                aria-describedby="titulo_proyecto_4"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Inventore necessitatibus doloribus adipisci dolorum cum et
-                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-                nihil voluptates eos enim aperiam porro architecto et?
-              </p>
-              <a href="#" class="boton" target="_blank">Ver proyecto</a>
-            </div>
-          </article>
-          <article
-            class="tarjeta"
-            aria-label="presentacion de proyecto personal"
-          >
-            <img
-              class="tarjeta__imagen"
-              src="./assets/images/proyectos/calculadora.jpg"
-              alt="imagen del proyecto"
-              title="proyecto 5"
-            />
-            <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_5">titulo</h3>
-              <span class="tarjeta__divisor"></span>
-              <p
-                class="tarjeta__parrafo scroll scroll_fino"
-                aria-label="descripcion de proyecto personal"
-                aria-describedby="titulo_proyecto_5"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Inventore necessitatibus doloribus adipisci dolorum cum et
-                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-                nihil voluptates eos enim aperiam porro architecto et?
-              </p>
-              <a href="#" class="boton boton_oscuro" target="_blank"
-                >Ver proyecto</a
-              >
-            </div>
-          </article>
-          <article
-            class="tarjeta"
-            aria-label="presentacion de proyecto personal"
-          >
-            <img
-              class="tarjeta__imagen"
-              src="./assets/images/proyectos/reproductor.jpg"
-              alt="imagen del proyecto"
-              title="proyecto 6"
-            />
-            <div class="tarjeta__contenido">
-              <h3 class="tarjeta__titulo" id="titulo_proyecto_6">titulo</h3>
-              <span class="tarjeta__divisor"></span>
-              <p
-                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
-                aria-label="descripcion de proyecto personal"
-                aria-describedby="titulo_proyecto_6"
-              >
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Inventore necessitatibus doloribus adipisci dolorum cum et
-                quisquam dicta veniam accusamus dignissimos. Placeat eligendi
-                nihil voluptates eos enim aperiam porro architecto et?
-              </p>
-              <a href="#" class="boton" target="_blank">Ver proyecto</a>
-            </div>
-          </article>
+                <img
+                  src="./assets/images/proyectos/reserva-global.png"
+                  alt="Captura del sitio Reserva Global Importados, licorería online"
+                  loading="lazy"
+                />
+              </a>
+              <div class="proyecto_destacado__contenido">
+                <p class="proyecto_destacado__etiqueta">Proyecto destacado</p>
+                <h3>Reserva Global Importados</h3>
+                <p>
+                  Licorería online premium con más de diez categorías de
+                  bebidas importadas, testimonios de clientes, medios de pago
+                  integrados (MercadoPago, transferencia, tarjetas) y contacto
+                  directo por WhatsApp.
+                </p>
+                <ul class="tags">
+                  <li>JavaScript</li>
+                  <li>Firebase</li>
+                  <li>HTML/CSS</li>
+                </ul>
+                <div class="proyecto_destacado__enlaces">
+                  <a
+                    href="https://rodrigojoel.github.io/TiendaBebidas/"
+                    target="_blank"
+                    rel="noopener"
+                    class="boton boton_pequeno"
+                    >Ver demo</a
+                  >
+                  <a
+                    href="https://github.com/RodrigoJoel/TiendaBebidas"
+                    target="_blank"
+                    rel="noopener"
+                    class="boton boton_pequeno boton_fantasma"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <h3 class="proyectos__subtitulo">Más proyectos</h3>
+          <div class="proyectos__grid">
+            <article class="tarjeta">
+              <img
+                class="tarjeta__imagen"
+                src="./assets/images/proyectos/gestor-boletas.png"
+                alt="Captura de la pantalla de login de Gestor de Boletas"
+                loading="lazy"
+              />
+              <div class="tarjeta__contenido">
+                <h4>Gestor de Boletas</h4>
+                <p>
+                  SPA para gestión de boletas y comprobantes, con
+                  autenticación protegida por Firebase Auth.
+                </p>
+                <ul class="tags tags_pequenas">
+                  <li>JavaScript</li>
+                  <li>Firebase Auth</li>
+                </ul>
+                <div class="tarjeta__enlaces">
+                  <a
+                    href="https://rodrigojoel.github.io/GestorBoletas/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver demo</a
+                  >
+                  <a
+                    href="https://github.com/RodrigoJoel/GestorBoletas"
+                    target="_blank"
+                    rel="noopener"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <div class="tarjeta__imagen tarjeta__imagen_placeholder" aria-hidden="true">
+                <span>Java · JavaFX</span>
+              </div>
+              <div class="tarjeta__contenido">
+                <h4>SistemaStock</h4>
+                <p>
+                  Aplicación de escritorio para gestión de inventario, hecha
+                  con JavaFX y conectada a una base de datos MySQL.
+                </p>
+                <ul class="tags tags_pequenas">
+                  <li>Java</li>
+                  <li>JavaFX</li>
+                  <li>MySQL</li>
+                </ul>
+                <div class="tarjeta__enlaces">
+                  <a
+                    href="https://github.com/RodrigoJoel/SistemaStock"
+                    target="_blank"
+                    rel="noopener"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <img
+                class="tarjeta__imagen"
+                src="./assets/images/proyectos/numero-secreto.png"
+                alt="Captura del juego del número secreto"
+                loading="lazy"
+              />
+              <div class="tarjeta__contenido">
+                <h4>Juego del número secreto</h4>
+                <p>
+                  Juego de adivinar un número del 1 al 10 con feedback en
+                  tiempo real, hecho en JavaScript puro.
+                </p>
+                <ul class="tags tags_pequenas">
+                  <li>JavaScript</li>
+                </ul>
+                <div class="tarjeta__enlaces">
+                  <a
+                    href="https://rodrigojoel.github.io/numero-secreto/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver demo</a
+                  >
+                  <a
+                    href="https://github.com/RodrigoJoel/numero-secreto"
+                    target="_blank"
+                    rel="noopener"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <img
+                class="tarjeta__imagen"
+                src="./assets/images/proyectos/encriptador.png"
+                alt="Captura del encriptador y desencriptador de texto"
+                loading="lazy"
+              />
+              <div class="tarjeta__contenido">
+                <h4>Encriptador de texto</h4>
+                <p>
+                  Encriptador/desencriptador de texto por sustitución,
+                  desarrollado como challenge de Oracle Next Education +
+                  Alura Latam.
+                </p>
+                <ul class="tags tags_pequenas">
+                  <li>JavaScript</li>
+                  <li>HTML/CSS</li>
+                </ul>
+                <div class="tarjeta__enlaces">
+                  <a
+                    href="https://rodrigojoel.github.io/encriptador-de-texto/"
+                    target="_blank"
+                    rel="noopener"
+                    >Ver demo</a
+                  >
+                  <a
+                    href="https://github.com/RodrigoJoel/encriptador-de-texto"
+                    target="_blank"
+                    rel="noopener"
+                    >Código</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-      </article>
+      </section>
+
+      <section class="seccion educacion">
+        <div class="contenedor">
+          <p class="seccion__eyebrow seccion__eyebrow_centro">Formación</p>
+          <h2 class="seccion__titulo seccion__titulo_centro">
+            Educación y certificaciones
+          </h2>
+          <ul class="linea_tiempo">
+            <li>
+              <span class="linea_tiempo__periodo">Egresado</span>
+              <div>
+                <h4>Técnico Universitario en Programación</h4>
+                <p>UTN, Facultad Regional Resistencia</p>
+              </div>
+            </li>
+            <li>
+              <span class="linea_tiempo__periodo">2023 — 2024</span>
+              <div>
+                <h4>Java y Spring Boot</h4>
+                <p>Oracle Next Education + Alura Latam</p>
+              </div>
+            </li>
+            <li>
+              <span class="linea_tiempo__periodo">2023 — 2024</span>
+              <div>
+                <h4>SQL con MySQL</h4>
+                <p>Oracle Next Education + Alura Latam</p>
+              </div>
+            </li>
+            <li>
+              <span class="linea_tiempo__periodo">2024</span>
+              <div>
+                <h4>Python, Data Science en OCI y Oracle Analytics</h4>
+                <p>Oracle Next Education + Alura Latam</p>
+              </div>
+            </li>
+            <li>
+              <span class="linea_tiempo__periodo">2012 — 2015</span>
+              <div>
+                <h4>Licenciatura en Economía</h4>
+                <p>UNNE, Universidad Nacional del Nordeste (cursado hasta 3er año)</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="seccion contacto" id="contacto">
+        <div class="contenedor contacto__contenido">
+          <p class="seccion__eyebrow seccion__eyebrow_centro">Contacto</p>
+          <h2 class="seccion__titulo seccion__titulo_centro">
+            ¿Hablamos de un proyecto?
+          </h2>
+          <p class="contacto__texto">
+            Estoy buscando oportunidades para seguir creciendo como
+            desarrollador. Si tenés una idea, una posición abierta, o
+            simplemente querés charlar sobre código, escribime.
+          </p>
+          <a
+            href="mailto:rodrigoatatat@gmail.com"
+            class="boton boton_primario boton_grande"
+            >rodrigoatatat@gmail.com</a
+          >
+        </div>
+      </section>
     </main>
-    <footer class="pie_de_pagina" role="contentinfo">
-      <div class="pie_de_pagina__columna">
-        <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
-        <ul class="enlaces enlaces_redes">
-          <li class="enlaces__item">
+
+    <footer class="pie_de_pagina">
+      <div class="contenedor pie_de_pagina__contenido">
+        <ul class="pie_de_pagina__redes" aria-label="Redes sociales">
+          <li>
             <a
-              class="enlaces__enlace enlaces__enlace_footer"
               href="https://github.com/RodrigoJoel"
               target="_blank"
-              ><img
-                class="enlaces__icono"
-                src="./assets/images/logos/github-logo.png"
-                alt="logo de github"
-                title="github"
+              rel="noopener"
+              aria-label="GitHub"
+              ><img src="./assets/images/logos/github-logo.png" alt=""
             /></a>
           </li>
-          <li class="enlaces__item">
+          <li>
             <a
-              class="enlaces__enlace enlaces__enlace_footer"
               href="https://www.instagram.com/rodriigoo____/"
               target="_blank"
-            >
-              <img
-                class="enlaces__icono"
-                src="./assets/images/logos/ig-logo.png"
-                alt="logo de instagram"
-                title="instagram"
-              />
-            </a>
+              rel="noopener"
+              aria-label="Instagram"
+              ><img src="./assets/images/logos/ig-logo.png" alt=""
+            /></a>
           </li>
-          <li class="enlaces__item">
+          <li>
             <a
-              class="enlaces__enlace enlaces__enlace_footer"
               href="https://twitter.com/1394Alves"
               target="_blank"
-              ><img
-                class="enlaces__icono"
-                src="./assets/images/logos/x-logo.png"
-                alt="logo de X"
-                title="X"
+              rel="noopener"
+              aria-label="X (Twitter)"
+              ><img src="./assets/images/logos/x-logo.png" alt=""
             /></a>
           </li>
         </ul>
-      </div>
-      <div class="pie_de_pagina__columna">
-        <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
-        <ul class="enlaces enlaces_vertical">
-          <li class="enlaces__item">
-            <a
-              class="enlaces__enlace enlaces__enlace_footer"
-              href="mailto:mail@mail.com"
-              target="_blank"
-              >Mail: rodrigoatatat@gmail.com</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="pie_de_pagina__columna" role="navigation">
-        <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
-        <ul class="enlaces enlaces_vertical">
-          <li class="enlaces__item">
-            <a
-              class="enlaces__enlace enlaces__enlace_footer"
-              href="#presentacion"
-              >Inicio</a
-            >
-          </li>
-          <li class="enlaces__item">
-            <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
-              >Sobre mi</a
-            >
-          </li>
-          <li class="enlaces__item">
-            <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
-              >Proyectos</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="pie_de_pagina__copyright">
-        <p>©️Copyright 2024</p>
+        <p class="pie_de_pagina__copy">
+          © 2026 Rodrigo Joel Nuñez · Resistencia, Chaco, Argentina
+        </p>
       </div>
     </footer>
   </body>
