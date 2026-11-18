@@ -243,6 +243,7 @@ input:focus-visible {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 .hero__redes img { width: 19px; height: 19px; }
+.hero__redes svg { width: 19px; height: 19px; }
 .hero__redes a:hover { transform: translateY(-2px); box-shadow: 0 8px 18px -6px #00000080; }
 
 /* ---------- Sections generic ---------- */
@@ -452,5 +453,6 @@ input:focus-visible {
   transition: opacity 0.15s ease, transform 0.15s ease;
 }
 .pie_de_pagina__redes img { width: 17px; height: 17px; }
+.pie_de_pagina__redes svg { width: 17px; height: 17px; }
 .pie_de_pagina__redes a:hover { opacity: 1; transform: translateY(-2px); }
 .pie_de_pagina__copy { color: var(--texto-tenue); font-size: 0.85rem; }
